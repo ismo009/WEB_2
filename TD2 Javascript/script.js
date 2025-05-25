@@ -344,7 +344,10 @@ if (muteCheckbox && volumeSlider) {
 }
 
 // Q44 : Afficher l’année choisie dans la console
-document.querySelector("input[type='date']")?.addEventListener("change", function () {
-  const year = this.value.split("-")[0];
-  console.log("Année sélectionnée :", year);
-});
+const dateInput = document.querySelector("input[type='date']");
+if (dateInput) {
+  dateInput.addEventListener("change", function () {
+    const year = this.value.split("-")[0];
+    console.log("Année sélectionnée :", year);
+  });
+}
