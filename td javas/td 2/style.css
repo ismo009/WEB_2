@@ -1,0 +1,64 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 20px;
+}
+
+.lien-images {
+  text-align: center;
+}
+
+.lien-images img {
+  width: 200px;
+  height: auto;
+}
+
+#elements {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+}
+
+.radio-group {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.volume-slider {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.checkbox {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+button {
+  padding: 8px 16px;
+  background-color: #f0f0f0;
+  border: 1px solid #ccc;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #ddd;
+}
+
+.erreur {
+  border: 2px solid red;
+  background-color: #ffe6e6;
+}
+
+.clignotant {
+  animation: clignote 1s infinite;
+}
+
+@keyframes clignote {
+  0% { opacity: 1; }
+  50% { opacity: 0.3; }
+  100% { opacity: 1; }
+}

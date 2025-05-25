@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulaire en JS</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Section Lien et images -->
+    <div class="lien-images">
+        <h1>Lien et images</h1>
+        <div class="content">
+            <p><a href="https://www.wikipedia.org ">La page principale de Wikipedia</a></p>
+            <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png " alt="Logo Google">
+        </div>
+    </div>
+
+    <hr>
+
+    <!-- Section Des éléments ! -->
+    <main>
+        <section id="elements">
+            <h1>Des éléments !</h1>
+            <input type="text" value="Premiers pas avec JavaScript" size="30" id="label">
+
+            <div class="radio-group">
+                <input type="radio" name="choix" value="1" id="c1">
+                <label for="c1">Choix N°1</label>
+                <input type="radio" name="choix" value="2" checked id="c2">
+                <label for="c2">Choix N°2</label>
+                <input type="radio" name="choix" value="3" id="c3">
+                <label for="c3">Choix N°3</label>
+            </div>
+
+            <input type="password" value="password" id="pwd">
+
+            <div class="volume-slider">
+                <input type="range" id="volume" name="volume" min="0" max="11">
+                <label for="volume">Volume</label>
+                <span id="affichage">0</span>
+            </div>
+
+            <div class="checkbox">
+                <label for="ouinon">Une case à cocher</label>
+                <input type="checkbox" name="ouinon" id="ouinon">
+            </div>
+
+            <p>Date: <input type="date" name="maDate"></p>
+
+            <button id="bp">Ok</button>
+        </section>
+
+        <hr>
+
+        <!-- Section Barres de progression -->
+        <section id="progression">
+            <h1>Barres de progression</h1>
+            <p>Téléchargement en cours: <progress id="file" value="50" max="100"></progress></p>
+            <p>Espace disponible: <meter id="espace_dispo" value="0.5"></meter></p>
+        </section>
+    </main>
+
+    <!-- Script JS -->
+    <script src="script.js"></script>
+</body>
+</html>
