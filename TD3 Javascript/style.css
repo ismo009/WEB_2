@@ -1,0 +1,204 @@
+/* Styles généraux */
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    line-height: 1.6;
+}
+
+section {
+    margin-bottom: 30px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+h2 {
+    color: #333;
+    margin-bottom: 15px;
+}
+
+/* Partie 1 - Formulaire */
+.formulaire {
+    padding: 20px;
+    border: 2px solid #ccc;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+}
+
+.champ-texte, .champ-email, .champ-radio, .champ-select, .champ-commentaire {
+    margin: 10px 0;
+    padding: 8px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.champ-texte input, .champ-email input, .champ-select select {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    flex: 1;
+}
+
+.champ-commentaire textarea {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    flex: 1;
+    min-height: 80px;
+}
+
+.champ-radio {
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+/* Zone d'information */
+.zone-info {
+    border: 2px solid #007bff;
+    background-color: #e7f3ff;
+}
+
+.info {
+    margin: 10px 0;
+    padding: 10px;
+    background-color: #fff;
+    border-left: 4px solid #007bff;
+}
+
+/* Liste d'éléments */
+.liste-elements {
+    background-color: #f8f9fa;
+}
+
+.liste-elements ul {
+    list-style-type: square;
+    margin: 15px 0;
+    padding-left: 30px;
+}
+
+.element-item {
+    background-color: #e9ecef;
+    margin: 5px 0;
+    padding: 8px;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+.element-item:hover {
+    background-color: #dee2e6;
+}
+
+/* Structure imbriquée */
+.structure-imbriquee .container {
+    border: 2px dashed #666;
+    padding: 15px;
+    margin: 10px 0;
+}
+
+.parent {
+    background-color: #f0f0f0;
+    padding: 15px;
+    border-radius: 5px;
+}
+
+/* Classes pour la mise en évidence */
+.highlight-first {
+    background-color: #ffeb3b !important;
+    border: 2px solid #fbc02d;
+}
+
+.highlight-last {
+    background-color: #4caf50 !important;
+    border: 2px solid #388e3c;
+}
+
+.highlight-next {
+    background-color: #2196f3 !important;
+    border: 2px solid #1976d2;
+}
+
+.highlight-prev {
+    background-color: #ff9800 !important;
+    border: 2px solid #f57c00;
+}
+
+/* Gestion des classes */
+.fond-jaune {
+    background-color: yellow !important;
+}
+
+.texte-gras {
+    font-weight: bold !important;
+}
+
+.element-test {
+    padding: 20px;
+    border: 2px solid #333;
+    margin: 10px 0;
+    transition: all 0.3s;
+}
+
+/* Événements */
+.survol {
+    padding: 15px;
+    background-color: #f0f0f0;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.focus-test:focus {
+    background-color: #e7f3ff;
+    border-color: #007bff;
+    outline: none;
+}
+
+.banniere {
+    background-color: #28a745;
+    color: white;
+    padding: 15px;
+    text-align: center;
+    border-radius: 5px;
+    display: none;
+}
+
+.banniere.show {
+    display: block;
+}
+
+/* Timers */
+.compteur {
+    font-size: 24px;
+    font-weight: bold;
+    margin: 15px 0;
+}
+
+.message-timeout {
+    min-height: 50px;
+    padding: 10px;
+    background-color: #f8f9fa;
+    border: 1px solid #dee2e6;
+    border-radius: 4px;
+    margin: 10px 0;
+}
+
+/* Boutons */
+button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    margin: 5px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+button:disabled {
+    background-color: #6c757d;
+    cursor: not-allowed;
+}

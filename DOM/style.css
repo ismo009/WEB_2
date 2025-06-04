@@ -1,0 +1,162 @@
+/* Styles généraux */
+body {
+  font-family: Arial, sans-serif;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.form-container {
+  background-color: #f5f5f5;
+  padding: 20px;
+  border-radius: 8px;
+  margin-bottom: 30px;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.form-input {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.radio-group {
+  display: flex;
+  gap: 15px;
+}
+
+.content-section {
+  margin-bottom: 20px;
+}
+
+.highlight {
+  background-color: #ffeb3b;
+  padding: 2px 4px;
+  border-radius: 3px;
+}
+
+.text-info {
+  color: #2196f3;
+  font-style: italic;
+}
+
+.list-container {
+  background-color: #e8f5e8;
+  padding: 15px;
+  border-radius: 5px;
+}
+
+/* Classes ajoutées pour la Question 2 */
+.formulaire {
+  padding: 25px;
+  border: 2px solid #ddd;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.champ-texte,
+.champ-email,
+.champ-radio,
+.champ-select,
+.champ-commentaire {
+  margin: 12px 0;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 14px;
+  transition: border-color 0.3s ease;
+}
+
+.champ-texte:focus,
+.champ-email:focus,
+.champ-select:focus,
+.champ-commentaire:focus {
+  border-color: #4CAF50;
+  outline: none;
+  box-shadow: 0 0 5px rgba(76, 175, 80, 0.3);
+}
+
+.champ-radio {
+  margin-right: 8px;
+  transform: scale(1.2);
+}
+
+.zone-info {
+  border: 2px solid #2196F3;
+  background-color: #E3F2FD;
+  padding: 20px;
+  border-radius: 8px;
+  margin: 15px 0;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.liste-elements {
+  list-style-type: disc;
+  margin: 20px 0;
+  padding-left: 30px;
+  background-color: #f0f8f0;
+  border-radius: 6px;
+  padding: 20px 20px 20px 50px;
+}
+
+.element-item {
+  background-color: #ffffff;
+  margin: 8px 0;
+  padding: 12px 15px;
+  border-radius: 5px;
+  border-left: 4px solid #4CAF50;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.element-item:hover {
+  background-color: #f5f5f5;
+  transform: translateX(5px);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+  border-left-color: #2196F3;
+}
+
+/* Styles pour les boutons */
+.submit-btn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+.submit-btn:hover {
+  background-color: #45a049;
+}
+
+/* Styles pour les sections */
+.demo-section {
+  background-color: #fff3e0;
+  padding: 20px;
+  border-radius: 8px;
+  border-left: 5px solid #ff9800;
+}
+
+.stat-item {
+  display: inline-block;
+  background-color: #e1f5fe;
+  padding: 8px 12px;
+  margin: 5px;
+  border-radius: 15px;
+  font-weight: bold;
+  color: #0277bd;
+}

@@ -1,0 +1,244 @@
+/* Styles généraux */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    min-height: 100vh;
+    padding: 20px;
+}
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+}
+
+h1 {
+    background: linear-gradient(90deg, #4a90e2, #357abd);
+    color: white;
+    text-align: center;
+    padding: 25px;
+    font-size: 2.2em;
+    margin-bottom: 0;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+/* Section de saisie */
+.input-section {
+    padding: 30px;
+    background: #f8f9fa;
+    border-bottom: 1px solid #e9ecef;
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+
+#champTexte {
+    flex: 1;
+    padding: 15px 20px;
+    border: 2px solid #ddd;
+    border-radius: 25px;
+    font-size: 16px;
+    outline: none;
+    transition: all 0.3s ease;
+}
+
+#champTexte:focus {
+    border-color: #4a90e2;
+    box-shadow: 0 0 0 3px rgba(74, 144, 226, 0.1);
+}
+
+#boutonAjouter {
+    background: linear-gradient(45deg, #4a90e2, #357abd);
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    border-radius: 25px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+#boutonAjouter:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(74, 144, 226, 0.4);
+}
+
+#boutonAjouter:active {
+    transform: translateY(0);
+}
+
+/* Section de filtrage */
+.filter-section {
+    padding: 20px 30px;
+    background: #f1f3f4;
+    border-bottom: 1px solid #e9ecef;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.filter-section label {
+    font-weight: bold;
+    color: #333;
+}
+
+#filtreTaches {
+    padding: 8px 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background: white;
+    cursor: pointer;
+    outline: none;
+}
+
+/* Styles du tableau */
+#conteneurTableau {
+    padding: 30px;
+}
+
+#tableauTaches {
+    width: 100%;
+    border-collapse: collapse;
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+#tableauTaches caption {
+    background: linear-gradient(90deg, #4a90e2, #357abd);
+    color: white;
+    padding: 20px;
+    font-size: 1.4em;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border-radius: 10px 10px 0 0;
+    transition: all 0.3s ease;
+}
+
+#tableauTaches caption:hover {
+    background: linear-gradient(90deg, #357abd, #2968a3);
+}
+
+#tableauTaches th {
+    background: #f8f9fa;
+    color: #333;
+    padding: 15px;
+    text-align: left;
+    font-weight: bold;
+    border-bottom: 2px solid #4a90e2;
+    text-transform: uppercase;
+    font-size: 0.9em;
+    letter-spacing: 0.5px;
+}
+
+#tableauTaches td {
+    padding: 15px;
+    border-bottom: 1px solid #eee;
+    vertical-align: middle;
+}
+
+#tableauTaches tr:nth-child(even) {
+    background: #f8f9fa;
+}
+
+#tableauTaches tr:hover {
+    background: #e3f2fd;
+    transition: background-color 0.3s ease;
+}
+
+/* Styles pour les tâches terminées */
+.tache-terminee {
+    background: #d4edda !important;
+    opacity: 0.7;
+}
+
+.tache-terminee .tache-texte {
+    color: #666;
+}
+
+/* Styles des boutons de suppression */
+.btn-supprimer {
+    background: linear-gradient(45deg, #e74c3c, #c0392b);
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 15px;
+    font-size: 12px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.btn-supprimer:hover {
+    transform: scale(1.05);
+    box-shadow: 0 3px 10px rgba(231, 76, 60, 0.4);
+}
+
+.btn-supprimer:active {
+    transform: scale(0.95);
+}
+
+/* Styles des checkboxes */
+input[type="checkbox"] {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    accent-color: #4a90e2;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .input-section {
+        flex-direction: column;
+        gap: 15px;
+    }
+    
+    #champTexte, #boutonAjouter {
+        width: 100%;
+    }
+    
+    .container {
+        margin: 10px;
+        border-radius: 10px;
+    }
+    
+    #tableauTaches {
+        font-size: 14px;
+    }
+    
+    #tableauTaches th,
+    #tableauTaches td {
+        padding: 10px 5px;
+    }
+}
+
+/* Animations d'entrée */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+#tableauTaches tbody tr {
+    animation: fadeInUp 0.5s ease;
+}

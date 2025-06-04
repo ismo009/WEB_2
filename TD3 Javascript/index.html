@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TD3 JavaScript - DOM Manipulation</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Partie 1 - Formulaire -->
+    <section class="formulaire">
+        <h2>Formulaire</h2>
+        <form class="form-container">
+            <div class="champ-texte">
+                <label>Nom:</label>
+                <input type="text" class="nom" placeholder="Votre nom">
+            </div>
+            <div class="champ-texte">
+                <label>Prénom:</label>
+                <input type="text" class="prenom" placeholder="Votre prénom">
+            </div>
+            <div class="champ-email">
+                <label>Email:</label>
+                <input type="email" class="email" placeholder="votre.email@exemple.com">
+            </div>
+            <div class="champ-radio">
+                <label>Sexe:</label>
+                <input type="radio" name="sexe" value="homme" class="sexe"> Homme
+                <input type="radio" name="sexe" value="femme" class="sexe"> Femme
+            </div>
+            <div class="champ-select">
+                <label>Pays:</label>
+                <select class="pays">
+                    <option value="france">France</option>
+                    <option value="belgique">Belgique</option>
+                    <option value="suisse">Suisse</option>
+                </select>
+            </div>
+            <div class="champ-commentaire">
+                <label>Commentaire:</label>
+                <textarea class="commentaire" placeholder="Votre commentaire"></textarea>
+            </div>
+        </form>
+    </section>
+
+    <!-- Zone d'information -->
+    <section class="zone-info">
+        <h2>Zone d'information</h2>
+        <div class="info">Div avec classe info</div>
+        <span class="info">Span avec classe info</span>
+        <p class="info">Paragraphe avec classe info</p>
+        <p>Autre paragraphe sans classe info</p>
+    </section>
+
+    <!-- Liste d'éléments -->
+    <section class="liste-elements">
+        <h2>Liste d'éléments</h2>
+        <ul>
+            <li class="element-item">Élément 1</li>
+            <li class="element-item">Élément 2</li>
+            <li class="element-item">Élément 3</li>
+        </ul>
+    </section>
+
+    <!-- Partie 2 - Structure imbriquée -->
+    <section class="structure-imbriquee">
+        <h2>Structure imbriquée</h2>
+        <div class="container">
+            <div class="parent">
+                <p>Premier paragraphe</p>
+                <ul>
+                    <li>Item 1</li>
+                    <li>Item 2</li>
+                    <li>Item 3</li>
+                </ul>
+                <p>Deuxième paragraphe</p>
+            </div>
+        </div>
+        <button class="analyser-btn">Analyser un élément</button>
+    </section>
+
+    <!-- Partie 3 - Gestion des classes -->
+    <section class="gestion-classes">
+        <h2>Gestion des classes CSS</h2>
+        <div class="element-test">Élément de test</div>
+        <button class="toggle-classe">Toggle classe</button>
+    </section>
+
+    <!-- Partie 5 - Événements -->
+    <section class="evenements">
+        <h2>Gestion des événements</h2>
+        <button class="btn-modifier">Modifier texte</button>
+        <p class="texte-modifiable">Texte à modifier</p>
+        <p class="survol">Survolez-moi!</p>
+        <input type="text" class="clavier" placeholder="Tapez ici">
+        <div class="affichage-clavier"></div>
+        <input type="text" class="focus-test" placeholder="Testez le focus">
+        <div class="banniere">Bannière d'accueil</div>
+    </section>
+
+    <!-- Partie 6 - Timers -->
+    <section class="timers">
+        <h2>Timers</h2>
+        <button class="btn-timeout">Afficher message dans 3s</button>
+        <div class="message-timeout"></div>
+        <div class="compteur">Compteur: <span class="valeur-compteur">0</span></div>
+        <button class="btn-start">Start compteur</button>
+        <button class="btn-stop">Stop compteur</button>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>

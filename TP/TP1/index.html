@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do List - Gestion de Projet</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Ma To-Do List - Gestion de Projet</h1>
+        
+        <div class="input-section">
+            <input type="text" id="champTexte" placeholder="Entrez une nouvelle tâche...">
+            <button id="boutonAjouter">Ajouter une tâche</button>
+        </div>
+        
+        <div class="filter-section">
+            <label for="filtreTaches">Afficher :</label>
+            <select id="filtreTaches">
+                <option value="toutes">Toutes les tâches</option>
+                <option value="terminees">Tâches terminées</option>
+                <option value="non-terminees">Tâches non terminées</option>
+            </select>
+        </div>
+        
+        <div id="conteneurTableau"></div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>

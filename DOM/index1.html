@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Structure d'éléments imbriqués</title>
+  <link rel="stylesheet" href="style1.css">
+</head>
+
+<body>
+  <header class="header-principal">
+    <h1 class="titre-principal">Structure d'éléments imbriqués</h1>
+
+    <!-- Navigation imbriquée -->
+    <nav class="navigation-menu">
+      <ul class="menu-liste">
+        <li class="menu-item">
+          <a href="#" class="menu-link">Accueil</a>
+        </li>
+        <li class="menu-item">
+          <a href="#" class="menu-link">Produits</a>
+          <ul class="sous-menu">
+            <li class="sous-menu-item">
+              <a href="#" class="sous-menu-link">Électronique</a>
+            </li>
+            <li class="sous-menu-item">
+              <a href="#" class="sous-menu-link">Vêtements</a>
+            </li>
+          </ul>
+        </li>
+        <li class="menu-item">
+          <a href="#" class="menu-link">Contact</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Conteneur principal avec imbrications complexes -->
+  <main class="container-principal">
+
+    <!-- Section 1: Articles avec listes imbriquées -->
+    <section class="section-article">
+      <h2 class="section-titre">Catalogue de produits</h2>
+      <p class="section-description">Découvrez notre sélection de produits organisés par catégories.</p>
+
+      <div class="categories-container">
+
+        <!-- Catégorie Électronique -->
+        <div class="categorie-box">
+          <h3 class="categorie-titre">Électronique</h3>
+          <p class="categorie-description">Tous nos appareils électroniques</p>
+
+          <ul class="produits-liste">
+            <li class="produit-item">
+              <div class="produit-card">
+                <h4 class="produit-nom">Smartphone</h4>
+                <p class="produit-description">Téléphone intelligent dernière génération</p>
+                <div class="produit-details">
+                  <span class="produit-prix">599€</span>
+                  <ul class="caracteristiques-liste">
+                    <li class="caracteristique-item">Écran 6.5 pouces</li>
+                    <li class="caracteristique-item">128GB de stockage</li>
+                    <li class="caracteristique-item">
+                      <span class="spec-label">Caméra:</span>
+                      <ul class="camera-specs">
+                        <li class="camera-spec">Principal: 48MP</li>
+                        <li class="camera-spec">Selfie: 12MP</li>
+                      </ul>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </li>
+
+            <li class="produit-item">
+              <div class="produit-card">
+                <h4 class="produit-nom">Laptop</h4>
+                <p class="produit-description">Ordinateur portable professionnel</p>
+                <div class="produit-details">
+                  <span class="produit-prix">899€</span>
+                  <ul class="caracteristiques-liste">
+                    <li class="caracteristique-item">Processeur Intel i7</li>
+                    <li class="caracteristique-item">16GB RAM</li>
+                    <li class="caracteristique-item">512GB SSD</li>
+                  </ul>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Catégorie Vêtements -->
+        <div class="categorie-box">
+          <h3 class="categorie-titre">Vêtements</h3>
+          <p class="categorie-description">Mode et style pour tous</p>
+
+          <ul class="produits-liste">
+            <li class="produit-item">
+              <div class="produit-card">
+                <h4 class="produit-nom">T-shirt</h4>
+                <p class="produit-description">T-shirt en coton bio</p>
+                <div class="produit-details">
+                  <span class="produit-prix">25€</span>
+                  <div class="tailles-container">
+                    <p class="tailles-label">Tailles disponibles:</p>
+                    <ul class="tailles-liste">
+                      <li class="taille-item">
+                        <span class="taille-nom">S</span>
+                        <ul class="couleurs-liste">
+                          <li class="couleur-item">Rouge</li>
+                          <li class="couleur-item">Bleu</li>
+                        </ul>
+                      </li>
+                      <li class="taille-item">
+                        <span class="taille-nom">M</span>
+                        <ul class="couleurs-liste">
+                          <li class="couleur-item">Rouge</li>
+                          <li class="couleur-item">Bleu</li>
+                          <li class="couleur-item">Noir</li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 2: Informations avec imbrications -->
+    <section class="section-article">
+      <h2 class="section-titre">Informations et Services</h2>
+
+      <div class="services-container">
+        <div class="service-box">
+          <h3 class="service-titre">Service Client</h3>
+          <div class="service-content">
+            <p class="service-description">Notre équipe est à votre disposition</p>
+            <div class="contact-info">
+              <ul class="contact-liste">
+                <li class="contact-item">
+                  <span class="contact-type">Téléphone:</span>
+                  <div class="contact-details">
+                    <p class="contact-numero">01 23 45 67 89</p>
+                    <ul class="horaires-liste">
+                      <li class="horaire-item">Lundi-Vendredi: 9h-18h</li>
+                      <li class="horaire-item">Samedi: 9h-12h</li>
+                    </ul>
+                  </div>
+                </li>
+                <li class="contact-item">
+                  <span class="contact-type">Email:</span>
+                  <div class="contact-details">
+                    <p class="contact-email">contact@exemple.com</p>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer avec structure complexe -->
+  <footer class="footer-section">
+    <div class="footer-content">
+      <div class="footer-column">
+        <h3 class="footer-titre">À propos</h3>
+        <ul class="footer-liste">
+          <li class="footer-item">
+            <a href="#" class="footer-link">Notre histoire</a>
+          </li>
+          <li class="footer-item">
+            <a href="#" class="footer-link">Équipe</a>
+            <ul class="sous-footer-liste">
+              <li class="sous-footer-item">Direction</li>
+              <li class="sous-footer-item">Développement</li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+
+      <div class="footer-column">
+        <h3 class="footer-titre">Liens utiles</h3>
+        <ul class="footer-liste">
+          <li class="footer-item">
+            <a href="#" class="footer-link">FAQ</a>
+          </li>
+          <li class="footer-item">
+            <a href="#" class="footer-link">Support</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p class="copyright">© 2024 - Tous droits réservés</p>
+    </div>
+  </footer>
+
+  <!-- Bouton d'analyse -->
+  <div class="analyse-container">
+    <button id="analyseBtn" class="analyse-button">Analyser un élément</button>
+    <p class="analyse-instruction">Cliquez sur le bouton, puis sur n'importe quel élément (li, p, div) pour analyser ses
+      propriétés DOM.</p>
+
+    <!-- Nouveau bouton pour les classes CSS -->
+    <div class="style-controls">
+      <button id="toggleStyleBtn" class="style-button">Mode Style: INACTIF</button>
+      <div class="style-options">
+        <button id="yellowBgBtn" class="option-button">Fond Jaune</button>
+        <button id="boldTextBtn" class="option-button">Texte Gras</button>
+        <button id="clearStyleBtn" class="option-button clear-btn">Effacer Styles</button>
+      </div>
+      <p class="style-instruction">Activez le mode, puis cliquez sur des éléments pour appliquer les styles.</p>
+    </div>
+  </div>
+
+  <script src="script1.js"></script>
+</body>
+
+</html>
