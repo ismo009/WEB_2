@@ -3,130 +3,158 @@
 
 <head>
   <meta charset="UTF-8">
-  <title>INSA RT</title>
-  <link rel="stylesheet" href="style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projets Web 2 - Portfolio</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Arial', sans-serif;
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      min-height: 100vh;
+      padding: 20px;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      background: white;
+      border-radius: 20px;
+      box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+      overflow: hidden;
+    }
+
+    .header {
+      background: linear-gradient(135deg, #2c3e50 0%, #3498db 100%);
+      color: white;
+      text-align: center;
+      padding: 40px 20px;
+    }
+
+    .header h1 {
+      font-size: 2.5em;
+      margin-bottom: 10px;
+    }
+
+    .header p {
+      font-size: 1.2em;
+      opacity: 0.9;
+    }
+
+    .projects-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 30px;
+      padding: 40px;
+    }
+
+    .project-card {
+      background: white;
+      border-radius: 15px;
+      padding: 25px;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      border: 2px solid transparent;
+    }
+
+    .project-card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+      border-color: #3498db;
+    }
+
+    .project-card h3 {
+      color: #2c3e50;
+      font-size: 1.5em;
+      margin-bottom: 15px;
+      display: flex;
+      align-items: center;
+    }
+
+    .project-card h3::before {
+      content: "📁";
+      margin-right: 10px;
+      font-size: 1.2em;
+    }
+
+    .project-card p {
+      color: #666;
+      margin-bottom: 20px;
+      line-height: 1.6;
+    }
+
+    .project-link {
+      display: inline-block;
+      background: linear-gradient(135deg, #3498db 0%, #2980b9 100%);
+      color: white;
+      text-decoration: none;
+      padding: 12px 25px;
+      border-radius: 25px;
+      transition: all 0.3s ease;
+      font-weight: bold;
+    }
+
+    .project-link:hover {
+      background: linear-gradient(135deg, #2980b9 0%, #3498db 100%);
+      transform: scale(1.05);
+    }
+
+    .footer {
+      background: #2c3e50;
+      color: white;
+      text-align: center;
+      padding: 20px;
+    }
+
+    @media (max-width: 768px) {
+      .projects-grid {
+        grid-template-columns: 1fr;
+        padding: 20px;
+      }
+
+      .header h1 {
+        font-size: 2em;
+      }
+    }
+  </style>
 </head>
 
 <body>
-
-  <div id="main">
-
-    <!-- HEADER -->
-    <header class="header">
-      <div class="logo-header">
-        <div class="logo-row">
-          <div class="logo-block">
-            <img src="images/Logo-INSA.png" alt="Logo INSA">
-          </div>
-          <span class="rt titre-manuscrit">R.T.</span>
-        </div>
-        <span class="uphf">UPHF INSA</span>
-      </div>
-      <nav>
-        <ul>
-          <li><a href="#">ACCUEIL</a></li>
-          <li><a href="#">BLOG</a></li>
-          <li><a href="#">CLASSE</a></li>
-          <li><a href="#">CONTACT</a></li>
-        </ul>
-      </nav>
-    </header>
-
-    <!-- BANNIÈRE -->
-    <section id="banner">
-      <img src="images/technology01.jpg" alt="Bannière disque dur">
-      <div class="legend">
-        <h1>Retour sur les Projets INSA…</h1>
-        <a href="#" class="button">Voir l'article</a>
-      </div>
-    </section>
-
-    <!-- CONTENU PRINCIPAL -->
-    <section>
-      <!-- ASIDE -->
-      <aside>
-        <img src="images/bulle.png" class="fleche" alt="">
-        <h1>À propos des auteurs</h1>
-        <img src="images/INSA_classe.png" alt="Photo auteur" class="author-photo">
-        <p>Laissez-nous le temps de nous présenter : nous sommes les licences INSA, promotion 2024-2025.</p>
-        <p>Aujourd'hui, nous avons décidé d'écrire des articles sur les Projets, afin que vous sachiez ce qui se cache
-          vraiment sous les Projets INSA!</p>
-        <div class="social-icons">
-          <img src="images/facebook.png" alt="Facebook">
-          <img src="images/twitter.png" alt="Twitter">
-          <img src="images/vimeo.png" alt="Vimeo">
-          <img src="images/flickr.png" alt="Flickr">
-          <img src="images/rss.png" alt="RSS">
-        </div>
-      </aside>
-
-      <!-- ARTICLE PRINCIPAL -->
-      <article>
-        <h1><img src="images/ico_epingle.png" alt=""> NOUS SOMMES TOUS DES GEEEEEKS...</h1>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam nec sagittis massa. Nulla facilisi. Cras id
-          arcu lorem, et semper purus. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus
-          mus. Duis vel enim mi, in lobortis sem. Vestibulum luctus elit eu libero ultrices id fermentum sem sagittis.
-          Nulla imperdiet mauris sed sapien dignissim id aliquam est aliquam. Maecenas non odio ipsum, a elementum nisi.
-          Mauris non erat eu erat placerat convallis. Mauris in pretium urna. Cras laoreet molestie odio, consequat
-          consequat velit commodo. Integer vitae lectus ac nunc posuere pellentesque non at eros. Suspendisse non lectus
-          lorem.</p>
-        <p>Vivamus sed libero nec mauris pulvinar facilisis ut non sem. Quisque mollis ullamcorper diam vel faucibus.
-          Vestibulum sollicitudin facilisis feugiat. Nulla euismod sodales hendrerit. Donec quis orci arcu. Vivamus
-          fermentum magna a erat ullamcorper dignissim pretium nunc aliquam. Aenean pulvinar condimentum enim a
-          dignissim. Vivamus sit amet lectus at ante adipiscing adipiscing elit et fringilla est. Cras id velit ut magna
-          rutrum commodo. Etiam ut scelerisque purus. Duis risus elit, venenatis vel rutrum in, imperdiet in quam. Sed
-          vestibulum, libero ut bibendum consectetur, eros ipsum ultrices nisl, in rutrum diam augue non tortor. Fusce
-          nec massa et risus dapibus aliquam vitae nec diam.</p>
-        <p>Phasellus ligula massa, congue ac vulputate non, dignissim at augue. Sed auctor fringilla quam quis
-          porttitor. Praesent vitae dignissim magna. Pellentesque sem purus, vel elementum mi. Pellentesque habitant
-          morbi tristique senectus et netus et malesuada fames ac turpis egestas. Maecenas consectetur euismod urna. In
-          hac habitasse platea dictumst. Quisque dictum porttitor vestibulum. Ut iaculis, lacus at molestie lacinia,
-          ipsum mi adipiscing ligula, vel mollis sem risus eu lectus. Nunc elit quam, rutrum ut dignissim sit amet,
-          egestas at sem.</p>
-      </article>
-    </section>
-
-    <!-- SÉPARATEUR HAUT DE PAGE -->
-    <div class="separator">
-      <img src="images/ico_top.png" alt="Retour haut">
+  <div class="container">
+    <div class="header">
+      <h1>Portfolio Web 2</h1>
+      <p>Projets réalisés dans le cadre du cours de développement web</p>
     </div>
 
-    <!-- FOOTER -->
-    <footer>
-      <div class="footer-block">
-        <h3>NOTRE DERNIER TWEET</h3>
-        <p>011100001111 !<br>le 7 mars 2017 à 10h76</p>
+    <div class="projects-grid">
+      <div class="project-card">
+        <h3>Projet 1 - Site Vitrine</h3>
+        <p>Description du premier projet : création d'un site vitrine avec HTML, CSS et JavaScript de base.</p>
+        <a href="index1.html" class="project-link">Voir le projet</a>
       </div>
 
-      <div class="footer-block">
-        <h3>NOS PHOTOS</h3>
-        <div class="photos">
-          <img src="images/photo1.jpg" alt="Photo 1">
-          <img src="images/photo2.jpg" alt="Photo 2">
-          <img src="images/photo3.jpg" alt="Photo 3">
-          <img src="images/photo4.jpg" alt="Photo 4">
-        </div>
+      <div class="project-card">
+        <h3>TD DOM 2</h3>
+        <p>partie 2, 3, 5, 6</p>
+        <a href="DOM/index1.html" class="project-link">Voir le projet</a>
       </div>
 
-      <div class="footer-block" id="bloc3">
-        <h3>NOS AMIS</h3>
-        <div class="friends-list">
-          <ul>
-            <li>tortor</li>
-            <li>Arduino Uno</li>
-            <li>Robot Darwin</li>
-            <li>Raspberry Pi</li>
-            <li>Boole</li>
-            <li>Bill Gates</li>
-            <li>Alan Turing</li>
-            <li>Mr 00R1</li>
-          </ul>
-        </div>
+      <div class="project-card">
+        <h3>TD DOM 1</h3>
+        <p>partie 1</p>
+        <a href="DOM/index.html" class="project-link">Voir le projet</a>
       </div>
-    </footer>
 
+
+
+    <div class="footer">
+      <p>&copy; 2025 - Projets Web 2 - INSA</p>
+    </div>
   </div>
-
 </body>
 
 </html>
